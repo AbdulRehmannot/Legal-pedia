@@ -1,0 +1,203 @@
+.navbar {
+  z-index: 1000 !important;
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    .logo {
+      height: 25px;
+      margin-bottom: 7px;
+    }
+  }
+
+  .nav-link {
+    color: var(--white);
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-left: 20px;
+    font-size: 18px !important;
+    transition: 0.3s;
+  }
+
+  .nav-link:hover {
+    color: var(--primary) !important;
+  }
+
+  .active {
+    color: var(--white) !important;
+  }
+
+  .nav-btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .btn {
+      color: var(--text-color);
+      transition: 0.4s;
+      padding: 3px 20px;
+    }
+    .login_btn {
+      border: 1px solid var(--white) !important;
+      color: var(--white);
+      &:hover {
+        border-color: var(--primary) !important;
+        color: var(--primary);
+      }
+    }
+
+    .login_btn:active {
+      outline: none !important;
+    }
+
+    .register_btn {
+      margin-left: 10px;
+      color: var(--primary);
+      border-radius: 3px !important;
+      padding: 3px 15px;
+      border: 2px solid var(--text-color);
+    }
+
+    .register_btn:hover {
+      color: #ffffff;
+      background-color: var(--primary);
+    }
+  }
+
+  .navbar-toggler {
+    color: var(--text-color);
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  .navbar-togglerIcon {
+    color: var(--text-color);
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .navbar {
+    .nav-btns {
+      margin-right: 0 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    .navbar_main {
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+      flex-wrap: nowrap !important;
+    }
+  }
+}
+
+// Adjust the sidebar styles for mobile and tablet views
+@media (max-width: 991px) {
+  .navbar {
+    .navbarCollapse {
+      position: fixed !important;
+      top: 0;
+      left: -230px;
+      width: 230px;
+      height: 100vh; // Adjust height to fit the viewport
+      overflow-y: auto; // Enable scrolling if content exceeds viewport height
+      background-color: var(--primary);
+      color: #ffffff;
+      transition: all 0.3s ease;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .navbarCollapse.show {
+      left: 0 !important; // Slide the sidebar into view when it's toggled
+    }
+
+    .navbar-nav {
+      padding-top: 50px;
+      gap: 20px;
+    }
+
+    .nav-link {
+      position: relative; // Ensure relative positioning for the pseudo-element
+      color: var(--text-color);
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+      margin-left: 0 !important;
+      font-size: 16px !important;
+      transition: 0.3s;
+
+      &::after {
+        content: ""; // Add content for the pseudo-element
+        position: absolute; // Position the pseudo-element
+        bottom: -5px; // Align the pseudo-element to the bottom
+        left: 50%; // Align the pseudo-element to the left
+        transform: translate(-50%, -50%);
+        height: 1px;
+        width: 100%; // Set the width to cover the entire width of the link
+        background-color: #ffffff;
+        transition: 0.3s;
+      }
+
+      &:hover::after {
+        width: 60%;
+      }
+    }
+
+    .nav-link:active {
+      color: var(--text-color) !important;
+    }
+
+    .nav-link:hover {
+      color: var(--text-color) !important;
+      // border-bottom: 2px solid #ffffff !important;
+      // bordre
+    }
+
+    .nav-link.active {
+      font-weight: 700;
+    }
+    .nav-link.active::after {
+      height: 2px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    .navbar_main {
+      padding-left: 25px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .navbar {
+    .navbar-toggler {
+      color: var(--primary) !important;
+    }
+
+    .navbar-togglerIcon {
+      color: var(--primary) !important;
+    }
+
+    .sidebar_auth_btns {
+      margin-top: 20px;
+    }
+
+    .auth_btn {
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    .login_btn {
+      background-color: var(--secondary);
+      color: var(--text-color);
+    }
+  }
+}

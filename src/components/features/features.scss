@@ -1,0 +1,12 @@
+.features {
+  // background-color: var(--secondary);
+  background-image: url(../../assets/imgs/features.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  .features_heading {
+    h2 {
+      color: var(--primary);
+      font-size: 45px;
+    }
+  }
+}

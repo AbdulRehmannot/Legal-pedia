@@ -1,0 +1,89 @@
+.agent_sidebar {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  position: relative;
+}
+.sidebar_btn {
+  position: absolute;
+  right: -27px;
+  color: gray;
+}
+
+.sidebar_btn .MuiSvgIcon-root {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar_btn .MuiSvgIcon-root:hover {
+  color: var(--white);
+}
+
+.agent_sidebar_sidebar {
+  background-color: var(--black);
+  width: 0;
+  height: 100vh;
+  transition: width ease 0.1s;
+  overflow: hidden;
+  padding: 0;
+}
+
+.show-sidebar {
+  width: 270px;
+  padding: 10px;
+}
+
+.agent_sidebar_heading {
+  color: var(--white);
+  border-bottom: 1px solid var(--secondary);
+  padding-bottom: 15px;
+}
+
+.annotated_properties {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  height: 85vh;
+  padding-right: 10px;
+}
+
+/* Style the scrollbar */
+.annotated_properties::-webkit-scrollbar {
+  width: 7px; /* Set scrollbar width */
+}
+
+/* Style the track */
+.annotated_properties::-webkit-scrollbar-track {
+  background-color: var(--secondary); /* Set track background color */
+  border-radius: 10px;
+}
+
+/* Style the thumb */
+.annotated_properties::-webkit-scrollbar-thumb {
+  background-color: gray; /* Set thumb color */
+  border-radius: 10px; /* Set thumb border radius */
+}
+
+.no_property {
+  color: gray;
+}
+
+@media screen and (max-width: 768px) {
+  .agent_sidebar {
+    position: absolute;
+    z-index: 1000;
+  }
+
+  .sidebar_btn {
+    background-color: gray;
+    color: var(--white);
+    padding: 8px 3px 8px 5px;
+    border-radius: 0 9px 9px 0;
+    right: -23px;
+  }
+
+  .sidebar_btn .MuiSvgIcon-root {
+    font-size: 15px;
+  }
+}

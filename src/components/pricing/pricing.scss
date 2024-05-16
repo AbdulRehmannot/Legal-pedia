@@ -1,0 +1,15 @@
+.pricing {
+  .pricing_heading {
+    h2 {
+      color: var(--primary);
+      font-size: 45px;
+    }
+  }
+
+  .pricing_body {
+    .feature {
+      padding-left: 25px !important;
+      padding-right: 25px !important;
+    }
+  }
+}

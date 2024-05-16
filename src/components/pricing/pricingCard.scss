@@ -1,0 +1,61 @@
+.pricingCard {
+  border-radius: 10px;
+  box-shadow: 0 5px 6px 6px rgba(0, 0, 0, 0.1);
+
+  .pricingCard_heading {
+    padding: 20px;
+    background-color: #eff6f3;
+    transition: all 0.4s;
+    p {
+      font-size: 17px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      font-weight: 600;
+    }
+    h3 {
+      font-size: 35px;
+      font-weight: 700;
+    }
+  }
+  .pricingCard_body {
+    padding: 10px;
+    .pricingCard_body_features {
+      list-style-type: none;
+      padding-left: 20px;
+      line-height: 50px;
+      li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+
+        .MuiSvgIcon-root {
+          font-size: 20px;
+        }
+      }
+
+      li.disabled {
+        color: rgb(146, 146, 146);
+      }
+    }
+
+    .btn {
+      width: 100%;
+      background-color: #3a3a3a;
+      border-radius: 3px;
+      color: var(--white);
+      padding: 10px;
+      transition: all 0.4s;
+    }
+  }
+
+  &:hover {
+    .pricingCard_heading {
+      background-color: #ce8800;
+      border-radius: 10px 10px 0 0;
+    }
+    .btn {
+      background-color: #ce8800 !important;
+    }
+  }
+}

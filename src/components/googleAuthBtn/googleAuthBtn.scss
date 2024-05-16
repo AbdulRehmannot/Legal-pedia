@@ -1,0 +1,19 @@
+.googleLogin_btn {
+  .btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 7px;
+    background-color: #ffff !important;
+    color: var(--light-dark-color) !important;
+    width: 100%;
+    font-weight: 500;
+    border: 1px solid #ffff;
+    transition: 0.3s;
+  }
+
+  .btn:hover {
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+  }
+}

@@ -1,0 +1,29 @@
+.subscribe {
+  .row {
+    justify-content: center;
+  }
+
+  .subscribe_input {
+    display: flex;
+    align-items: center;
+
+    background-color: #f6f6f6;
+    input {
+      width: 100%;
+      background: transparent;
+      border: none;
+      padding: 10px 8px;
+    }
+    input:focus {
+      border: none !important;
+      outline: none !important;
+      font-size: 17px;
+    }
+    .btn {
+      background-color: var(--primary);
+      border-radius: 0;
+      padding: 7px 15px;
+      color: var(--white);
+    }
+  }
+}

@@ -1,0 +1,122 @@
+.signupForm {
+  width: 300px;
+  color: var(--text-color);
+  h2 {
+    color: #ffff;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .logo {
+    .logo_link {
+      text-decoration: none;
+    }
+    h2 {
+      color: var(--primary);
+      text-align: center;
+      font-size: 45px;
+      margin-bottom: 0 !important;
+    }
+    img {
+      height: 30px;
+    }
+  }
+
+  .signupForm_form_input {
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px 5px 20px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    border: 1px solid #aaaaaa;
+    .MuiSvgIcon-root {
+      color: #aaaaaa;
+      margin-right: 10px;
+    }
+    input {
+      background-color: transparent;
+      border: none;
+      color: var(--secondary);
+      width: 100%;
+    }
+    input:focus {
+      outline: none;
+      border: none;
+    }
+
+    input::placeholder {
+      color: #aaaaaa;
+    }
+  }
+
+  .signupForm_form_loginBtn {
+    button {
+      width: 100%;
+      background-color: var(--primary);
+      color: var(--white);
+      border: 1px solid var(--primary);
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: transparent;
+      color: var(--primary);
+    }
+  }
+  .signupForm_form_forgot {
+    text-align: right;
+    margin-top: 8px;
+    .signupForm_form_forgot_link {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .signupForm_form_forgot_link:hover {
+      color: #ffff;
+    }
+  }
+
+  .divider {
+    color: #aaaaaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    .line {
+      background-color: #aaaaaa;
+      height: 1px;
+      width: 50%;
+    }
+
+    span {
+      text-align: center;
+      width: 30px;
+      font-weight: 500;
+    }
+  }
+
+  .alreadyHvAccount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    p {
+      margin-bottom: 0;
+      color: #aaaaaa;
+    }
+    .link {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .link:hover {
+      color: #ffff;
+    }
+  }
+}

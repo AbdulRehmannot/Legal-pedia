@@ -1,0 +1,33 @@
+.faqs {
+  background-image: url(../../assets/imgs/faq.png);
+
+  .faqs_body {
+    padding-bottom: 20px;
+    .MuiAccordion-root {
+      background-color: transparent !important;
+      color: var(--white);
+    }
+    .MuiCollapse-root,
+    .MuiButtonBase-root {
+      border: 1px solid var(--white) !important;
+      outline-color: var(--white) !important;
+    }
+    .MuiCollapse-root {
+      border-top: none !important;
+      border-radius: 0 0 7px 7px;
+    }
+    .MuiButtonBase-root {
+      margin-top: 15px;
+      border-radius: 7px 7px 0 0;
+    }
+
+    .MuiSvgIcon-root {
+      color: var(--white);
+    }
+
+    .MuiCollapse-entered,
+    .Mui-expanded {
+      background-color: var(--primary);
+    }
+  }
+}
